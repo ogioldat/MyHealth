@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE76E61D2A3BB630008B3FC4 /* DailyStatsDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE76E61C2A3BB630008B3FC4 /* DailyStatsDashboard.swift */; };
+		FE76E61F2A3BB673008B3FC4 /* DailyStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE76E61E2A3BB673008B3FC4 /* DailyStats.swift */; };
+		FE76E6212A3BBA6E008B3FC4 /* GoalGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE76E6202A3BBA6E008B3FC4 /* GoalGauge.swift */; };
 		FEA93EA82A3A624D0085D155 /* MyHealthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA93EA72A3A624D0085D155 /* MyHealthApp.swift */; };
 		FEA93EAA2A3A624D0085D155 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA93EA92A3A624D0085D155 /* ContentView.swift */; };
 		FEA93EAC2A3A624E0085D155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA93EAB2A3A624E0085D155 /* Assets.xcassets */; };
@@ -14,6 +17,11 @@
 		FEA93EB92A3A624E0085D155 /* MyHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA93EB82A3A624E0085D155 /* MyHealthTests.swift */; };
 		FEA93EC32A3A624E0085D155 /* MyHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA93EC22A3A624E0085D155 /* MyHealthUITests.swift */; };
 		FEA93EC52A3A624E0085D155 /* MyHealthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA93EC42A3A624E0085D155 /* MyHealthUITestsLaunchTests.swift */; };
+		FEA93ED22A3A62D40085D155 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA93ED12A3A62D40085D155 /* HomeView.swift */; };
+		FEA93ED52A3A684A0085D155 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA93ED42A3A684A0085D155 /* Goal.swift */; };
+		FEA93ED72A3A6A8C0085D155 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA93ED62A3A6A8C0085D155 /* Colors.xcassets */; };
+		FEA93EDB2A3A6EC20085D155 /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA93EDA2A3A6EC20085D155 /* Goals.swift */; };
+		FEA93EDE2A3A726C0085D155 /* DailyStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA93EDD2A3A726C0085D155 /* DailyStatsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE76E61C2A3BB630008B3FC4 /* DailyStatsDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStatsDashboard.swift; sourceTree = "<group>"; };
+		FE76E61E2A3BB673008B3FC4 /* DailyStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStats.swift; sourceTree = "<group>"; };
+		FE76E6202A3BBA6E008B3FC4 /* GoalGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalGauge.swift; sourceTree = "<group>"; };
 		FEA93EA42A3A624D0085D155 /* MyHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA93EA72A3A624D0085D155 /* MyHealthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealthApp.swift; sourceTree = "<group>"; };
 		FEA93EA92A3A624D0085D155 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +55,11 @@
 		FEA93EBE2A3A624E0085D155 /* MyHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA93EC22A3A624E0085D155 /* MyHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealthUITests.swift; sourceTree = "<group>"; };
 		FEA93EC42A3A624E0085D155 /* MyHealthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealthUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FEA93ED12A3A62D40085D155 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FEA93ED42A3A684A0085D155 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		FEA93ED62A3A6A8C0085D155 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		FEA93EDA2A3A6EC20085D155 /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
+		FEA93EDD2A3A726C0085D155 /* DailyStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStatsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,7 @@
 		FEA93E9B2A3A624D0085D155 = {
 			isa = PBXGroup;
 			children = (
+				FEA93ED62A3A6A8C0085D155 /* Colors.xcassets */,
 				FEA93EA62A3A624D0085D155 /* MyHealth */,
 				FEA93EB72A3A624E0085D155 /* MyHealthTests */,
 				FEA93EC12A3A624E0085D155 /* MyHealthUITests */,
@@ -94,10 +111,13 @@
 		FEA93EA62A3A624D0085D155 /* MyHealth */ = {
 			isa = PBXGroup;
 			children = (
+				FEA93EDC2A3A72600085D155 /* Stats */,
+				FEA93ED32A3A683A0085D155 /* Goals */,
 				FEA93EA72A3A624D0085D155 /* MyHealthApp.swift */,
 				FEA93EA92A3A624D0085D155 /* ContentView.swift */,
 				FEA93EAB2A3A624E0085D155 /* Assets.xcassets */,
 				FEA93EAD2A3A624E0085D155 /* Preview Content */,
+				FEA93ED12A3A62D40085D155 /* HomeView.swift */,
 			);
 			path = MyHealth;
 			sourceTree = "<group>";
@@ -125,6 +145,26 @@
 				FEA93EC42A3A624E0085D155 /* MyHealthUITestsLaunchTests.swift */,
 			);
 			path = MyHealthUITests;
+			sourceTree = "<group>";
+		};
+		FEA93ED32A3A683A0085D155 /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				FEA93ED42A3A684A0085D155 /* Goal.swift */,
+				FEA93EDA2A3A6EC20085D155 /* Goals.swift */,
+			);
+			path = Goals;
+			sourceTree = "<group>";
+		};
+		FEA93EDC2A3A72600085D155 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				FEA93EDD2A3A726C0085D155 /* DailyStatsView.swift */,
+				FE76E61C2A3BB630008B3FC4 /* DailyStatsDashboard.swift */,
+				FE76E61E2A3BB673008B3FC4 /* DailyStats.swift */,
+				FE76E6202A3BBA6E008B3FC4 /* GoalGauge.swift */,
+			);
+			path = Stats;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEA93ED72A3A6A8C0085D155 /* Colors.xcassets in Resources */,
 				FEA93EAF2A3A624E0085D155 /* Preview Assets.xcassets in Resources */,
 				FEA93EAC2A3A624E0085D155 /* Assets.xcassets in Resources */,
 			);
@@ -257,6 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE76E6212A3BBA6E008B3FC4 /* GoalGauge.swift in Sources */,
+				FEA93EDB2A3A6EC20085D155 /* Goals.swift in Sources */,
+				FEA93ED52A3A684A0085D155 /* Goal.swift in Sources */,
+				FEA93EDE2A3A726C0085D155 /* DailyStatsView.swift in Sources */,
+				FE76E61D2A3BB630008B3FC4 /* DailyStatsDashboard.swift in Sources */,
+				FEA93ED22A3A62D40085D155 /* HomeView.swift in Sources */,
+				FE76E61F2A3BB673008B3FC4 /* DailyStats.swift in Sources */,
 				FEA93EAA2A3A624D0085D155 /* ContentView.swift in Sources */,
 				FEA93EA82A3A624D0085D155 /* MyHealthApp.swift in Sources */,
 			);
@@ -420,6 +468,7 @@
 				DEVELOPMENT_TEAM = 2VNXB24A45;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMotionUsageDescription = "Uses motion data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +498,7 @@
 				DEVELOPMENT_TEAM = 2VNXB24A45;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMotionUsageDescription = "Uses motion data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
