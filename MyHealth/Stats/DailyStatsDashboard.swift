@@ -16,12 +16,12 @@ struct DailyStatsDashboard: View {
 //
 //                Text("Floors").font(.headline)
 //                Text(String(dailyStats!.floors))
+                
+                GoalGauge(
+                    steps: dailyStats!.numberOfSteps,
+                    goal: 5000 // for now hardcoded
+                )
             }
-            
-            GoalGauge(
-                steps: 3000,
-                goal: 5000
-            )
         }
     }
 }
