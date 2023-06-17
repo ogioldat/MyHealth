@@ -14,10 +14,8 @@ struct CustomGaugeStyle: GaugeStyle {
     
     func makeBody(configuration: Configuration) -> some View {
         ZStack {
-            
             Circle()
                 .foregroundColor(Color(.systemGray6))
-            
             
             Circle()
                 .trim(from: 0, to: 0.75)

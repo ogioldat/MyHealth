@@ -1,4 +1,3 @@
-//
 import SwiftUI
 
 struct SettingsView: View {
@@ -11,13 +10,14 @@ struct SettingsView: View {
                     Text("Change my profile")
                     Text("Health data sharing")
                 }
+                
                 Section("notifications") {
                     Toggle("Toggle notifications", isOn: $isOn)
                 }
-//                EXAM 2
-//                Section("info") {
-//                    Text("Authors info")
-//                }
+                
+                Section("info") {
+                    Text("Authors info")
+                }
             }
             .navigationTitle("Settings ⚙️")
         }
