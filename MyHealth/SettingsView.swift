@@ -1,10 +1,4 @@
 //
-//  UserSettingsView.swift
-//  MyHealth
-//
-//  Created by Tomek Ogiołda on 17/06/2023.
-//
-
 import SwiftUI
 
 struct SettingsView: View {
@@ -20,6 +14,10 @@ struct SettingsView: View {
                 Section("notifications") {
                     Toggle("Toggle notifications", isOn: $isOn)
                 }
+//                EXAM 2
+//                Section("info") {
+//                    Text("Authors info")
+//                }
             }
             .navigationTitle("Settings ⚙️")
         }

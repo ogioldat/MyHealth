@@ -45,7 +45,6 @@ struct CustomGaugeStyle: GaugeStyle {
         .frame(width: 300, height: 300)
         
     }
-    
 }
 
 struct GoalGauge: View {

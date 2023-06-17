@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  MyHealth
-//
-//  Created by Tomek Ogiołda on 14/06/2023.
-//
-
 import SwiftUI
 
 struct ContentView: View {

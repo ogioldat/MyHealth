@@ -66,6 +66,7 @@
 		FEA93ED62A3A6A8C0085D155 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FEA93EDA2A3A6EC20085D155 /* GoalSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSelection.swift; sourceTree = "<group>"; };
 		FEA93EDD2A3A726C0085D155 /* DailyStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStatsView.swift; sourceTree = "<group>"; };
+		FEC926E62A3D90AB005FA872 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FEDD048B2A3D2962007EE6CD /* ActiveGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveGoal.swift; sourceTree = "<group>"; };
 		FEDD048D2A3D3821007EE6CD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +116,7 @@
 		FEA93E9B2A3A624D0085D155 = {
 			isa = PBXGroup;
 			children = (
+				FEC926E62A3D90AB005FA872 /* README.md */,
 				FEA93ED62A3A6A8C0085D155 /* Colors.xcassets */,
 				FEA93EA62A3A624D0085D155 /* MyHealth */,
 				FEA93EB72A3A624E0085D155 /* MyHealthTests */,

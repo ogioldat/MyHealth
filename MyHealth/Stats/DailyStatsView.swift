@@ -31,12 +31,13 @@ struct DailyStatsView: View {
     
     private func initPedometer() {
         if isPedometerAvailable {
-            guard let startDate = Calendar.current.date(byAdding: .day, value: -1, to: Date()) else {
-                return
-            }
-            
-            pedometer.queryPedometerData(from: startDate, to: Date()) { (data, error) in
-                updateStats(data: data)
+            let today = Calendar.current.startOfDay(for: .now)
+            pedometer.startUpdates(from: today) { pedometerData, error in
+                guard let pedometerData = pedometerData, error == nil else { return }
+                
+                DispatchQueue.main.async {
+                    updateStats(data: pedometerData)
+                }
             }
         }
     }
