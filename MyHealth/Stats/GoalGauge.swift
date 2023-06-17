@@ -18,6 +18,12 @@ struct CustomGaugeStyle: GaugeStyle {
             Circle()
                 .foregroundColor(Color(.systemGray6))
             
+            
+            Circle()
+                .trim(from: 0, to: 0.75)
+                .stroke(Color(.systemGray5), style: StrokeStyle(lineWidth: 30, lineCap: .round))
+                .rotationEffect(.degrees(135))
+            
             // Progress indicator
             Circle()
                 .trim(from: 0, to: 0.75 * configuration.value)
@@ -58,5 +64,13 @@ struct GoalGauge: View {
         }
         .tint(Gradient(colors: [.red, .yellow, .green]))
         .gaugeStyle(CustomGaugeStyle())
+    }
+}
+
+struct GoalGauge_Previews: PreviewProvider {
+    static var previews: some View {
+        GoalGauge(
+            steps: 2404, goal: 5000
+        )
     }
 }

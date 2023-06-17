@@ -1,13 +1,8 @@
-//
-//  HomeView.swift
-//  MyHealth
-//
-//  Created by Tomek Ogiołda on 14/06/2023.
-//
-
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject private var activeGoal = ActiveGoal()
+    
     var body: some View {
         NavigationStack{
             List {
@@ -23,11 +18,18 @@ struct HomeView: View {
                     }
                 }
                 Section("goals") {
-                    Goals()
+                    ForEach(goals, id: \.id) { goal in
+                        GoalSelection(goal: goal)
+                            .onTapGesture {
+                                activeGoal.id = goal.id
+                                activeGoal.value = Double(goal.value)
+                            }
+                    }
                 }
             }
             .navigationTitle("MyHealth 🔥")
         }
+        .environmentObject(activeGoal)
     }
 }
 

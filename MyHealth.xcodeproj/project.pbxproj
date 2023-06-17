@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE53E0BE2A3D0F57003D1675 /* goals_definitions.json in Resources */ = {isa = PBXBuildFile; fileRef = FE53E0BD2A3D0F57003D1675 /* goals_definitions.json */; };
+		FE53E0C12A3D1094003D1675 /* GoalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE53E0C02A3D1094003D1675 /* GoalData.swift */; };
+		FE53E0C32A3D10CD003D1675 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE53E0C22A3D10CD003D1675 /* Goal.swift */; };
 		FE76E61D2A3BB630008B3FC4 /* DailyStatsDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE76E61C2A3BB630008B3FC4 /* DailyStatsDashboard.swift */; };
 		FE76E61F2A3BB673008B3FC4 /* DailyStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE76E61E2A3BB673008B3FC4 /* DailyStats.swift */; };
 		FE76E6212A3BBA6E008B3FC4 /* GoalGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE76E6202A3BBA6E008B3FC4 /* GoalGauge.swift */; };
@@ -18,10 +21,11 @@
 		FEA93EC32A3A624E0085D155 /* MyHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA93EC22A3A624E0085D155 /* MyHealthUITests.swift */; };
 		FEA93EC52A3A624E0085D155 /* MyHealthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA93EC42A3A624E0085D155 /* MyHealthUITestsLaunchTests.swift */; };
 		FEA93ED22A3A62D40085D155 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA93ED12A3A62D40085D155 /* HomeView.swift */; };
-		FEA93ED52A3A684A0085D155 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA93ED42A3A684A0085D155 /* Goal.swift */; };
 		FEA93ED72A3A6A8C0085D155 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA93ED62A3A6A8C0085D155 /* Colors.xcassets */; };
-		FEA93EDB2A3A6EC20085D155 /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA93EDA2A3A6EC20085D155 /* Goals.swift */; };
+		FEA93EDB2A3A6EC20085D155 /* GoalSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA93EDA2A3A6EC20085D155 /* GoalSelection.swift */; };
 		FEA93EDE2A3A726C0085D155 /* DailyStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA93EDD2A3A726C0085D155 /* DailyStatsView.swift */; };
+		FEDD048C2A3D2962007EE6CD /* ActiveGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDD048B2A3D2962007EE6CD /* ActiveGoal.swift */; };
+		FEDD048E2A3D3821007EE6CD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDD048D2A3D3821007EE6CD /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE53E0BD2A3D0F57003D1675 /* goals_definitions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = goals_definitions.json; sourceTree = "<group>"; };
+		FE53E0C02A3D1094003D1675 /* GoalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalData.swift; sourceTree = "<group>"; };
+		FE53E0C22A3D10CD003D1675 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		FE76E61C2A3BB630008B3FC4 /* DailyStatsDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStatsDashboard.swift; sourceTree = "<group>"; };
 		FE76E61E2A3BB673008B3FC4 /* DailyStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStats.swift; sourceTree = "<group>"; };
 		FE76E6202A3BBA6E008B3FC4 /* GoalGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalGauge.swift; sourceTree = "<group>"; };
@@ -56,10 +63,11 @@
 		FEA93EC22A3A624E0085D155 /* MyHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealthUITests.swift; sourceTree = "<group>"; };
 		FEA93EC42A3A624E0085D155 /* MyHealthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHealthUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FEA93ED12A3A62D40085D155 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		FEA93ED42A3A684A0085D155 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		FEA93ED62A3A6A8C0085D155 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		FEA93EDA2A3A6EC20085D155 /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
+		FEA93EDA2A3A6EC20085D155 /* GoalSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSelection.swift; sourceTree = "<group>"; };
 		FEA93EDD2A3A726C0085D155 /* DailyStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStatsView.swift; sourceTree = "<group>"; };
+		FEDD048B2A3D2962007EE6CD /* ActiveGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveGoal.swift; sourceTree = "<group>"; };
+		FEDD048D2A3D3821007EE6CD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE53E0BC2A3D0F25003D1675 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE53E0BD2A3D0F57003D1675 /* goals_definitions.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FE53E0BF2A3D1077003D1675 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE53E0C02A3D1094003D1675 /* GoalData.swift */,
+				FE53E0C22A3D10CD003D1675 /* Goal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FEA93E9B2A3A624D0085D155 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +136,7 @@
 		FEA93EA62A3A624D0085D155 /* MyHealth */ = {
 			isa = PBXGroup;
 			children = (
+				FE53E0BC2A3D0F25003D1675 /* Resources */,
 				FEA93EDC2A3A72600085D155 /* Stats */,
 				FEA93ED32A3A683A0085D155 /* Goals */,
 				FEA93EA72A3A624D0085D155 /* MyHealthApp.swift */,
@@ -118,6 +144,8 @@
 				FEA93EAB2A3A624E0085D155 /* Assets.xcassets */,
 				FEA93EAD2A3A624E0085D155 /* Preview Content */,
 				FEA93ED12A3A62D40085D155 /* HomeView.swift */,
+				FEDD048B2A3D2962007EE6CD /* ActiveGoal.swift */,
+				FEDD048D2A3D3821007EE6CD /* SettingsView.swift */,
 			);
 			path = MyHealth;
 			sourceTree = "<group>";
@@ -150,8 +178,8 @@
 		FEA93ED32A3A683A0085D155 /* Goals */ = {
 			isa = PBXGroup;
 			children = (
-				FEA93ED42A3A684A0085D155 /* Goal.swift */,
-				FEA93EDA2A3A6EC20085D155 /* Goals.swift */,
+				FE53E0BF2A3D1077003D1675 /* Model */,
+				FEA93EDA2A3A6EC20085D155 /* GoalSelection.swift */,
 			);
 			path = Goals;
 			sourceTree = "<group>";
@@ -274,6 +302,7 @@
 				FEA93ED72A3A6A8C0085D155 /* Colors.xcassets in Resources */,
 				FEA93EAF2A3A624E0085D155 /* Preview Assets.xcassets in Resources */,
 				FEA93EAC2A3A624E0085D155 /* Assets.xcassets in Resources */,
+				FE53E0BE2A3D0F57003D1675 /* goals_definitions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,13 +328,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE76E6212A3BBA6E008B3FC4 /* GoalGauge.swift in Sources */,
-				FEA93EDB2A3A6EC20085D155 /* Goals.swift in Sources */,
-				FEA93ED52A3A684A0085D155 /* Goal.swift in Sources */,
+				FEA93EDB2A3A6EC20085D155 /* GoalSelection.swift in Sources */,
 				FEA93EDE2A3A726C0085D155 /* DailyStatsView.swift in Sources */,
 				FE76E61D2A3BB630008B3FC4 /* DailyStatsDashboard.swift in Sources */,
+				FEDD048E2A3D3821007EE6CD /* SettingsView.swift in Sources */,
 				FEA93ED22A3A62D40085D155 /* HomeView.swift in Sources */,
 				FE76E61F2A3BB673008B3FC4 /* DailyStats.swift in Sources */,
 				FEA93EAA2A3A624D0085D155 /* ContentView.swift in Sources */,
+				FE53E0C12A3D1094003D1675 /* GoalData.swift in Sources */,
+				FE53E0C32A3D10CD003D1675 /* Goal.swift in Sources */,
+				FEDD048C2A3D2962007EE6CD /* ActiveGoal.swift in Sources */,
 				FEA93EA82A3A624D0085D155 /* MyHealthApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

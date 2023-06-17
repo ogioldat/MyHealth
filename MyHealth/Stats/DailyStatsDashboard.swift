@@ -2,25 +2,41 @@ import SwiftUI
 
 struct DailyStatsDashboard: View {
     var dailyStats: DailyStats?
+    @EnvironmentObject private var activeGoal: ActiveGoal
     
     var body: some View {
         VStack{
-            Text("Today's stats").font(.title).padding(10)
-            
             if (dailyStats == nil) {
                 Text("Ooops!").font(.title)
-                Text("Looks like there is no data to be displayed, please grant permission to read health data")
+                Text("Looks like there is no data to be displayed,")
+                Text("please grant permission to read health data")
             } else {
-//                Text("Distance (meters)").font(.headline)
-//                Text(String(dailyStats!.distance))
-//
-//                Text("Floors").font(.headline)
-//                Text(String(dailyStats!.floors))
+                if (dailyStats!.numberOfSteps > Int((activeGoal.value ?? 0))) {
+                    Text("✅ Goal fulfilled").font(.headline).padding()
+                } else {
+                    Text("❌ Goal not fulfilled").font(.headline).padding()
+                }
                 
                 GoalGauge(
                     steps: dailyStats!.numberOfSteps,
-                    goal: 5000 // for now hardcoded
+                    goal: activeGoal.value // for now hardcoded
                 )
+                
+                HStack{
+                    Spacer()
+                    VStack {
+                        Text("Floors").font(.title)
+                        Text(dailyStats!.floors.formatted())
+                    }
+                    
+                    Spacer()
+                    
+                    VStack {
+                        Text("Distance").font(.title)
+                        Text(dailyStats!.distance.formatted() + " meters")
+                    }
+                    Spacer()
+                }
             }
         }
     }

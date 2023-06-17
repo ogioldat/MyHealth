@@ -18,34 +18,37 @@ struct DailyStatsView: View {
         && CMPedometer.isDistanceAvailable() && CMPedometer.isStepCountingAvailable()
     }
     
+    private func updateStats(data: CMPedometerData?) {
+        guard let data = data else {
+            return
+        }
+        dailyStats = DailyStats(
+            numberOfSteps: data.numberOfSteps.intValue,
+            distance: data.distance?.intValue ?? 0,
+            floors: data.floorsAscended?.intValue ?? 0
+        )
+    }
+    
     private func initPedometer() {
         if isPedometerAvailable {
             guard let startDate = Calendar.current.date(byAdding: .day, value: -1, to: Date()) else {
                 return
             }
+            
             pedometer.queryPedometerData(from: startDate, to: Date()) { (data, error) in
-                guard let data = data, error == nil else {
-                    return
-                }
-                dailyStats = DailyStats(
-                    numberOfSteps: data.numberOfSteps.intValue,
-                    distance: data.distance?.intValue ?? 0,
-                    floors: data.floorsAscended?.intValue ?? 0
-                )
+                updateStats(data: data)
             }
         }
     }
     
     var body: some View {
-        VStack{
+        NavigationStack{
             DailyStatsDashboard(dailyStats: dailyStats)
-            
         }
-        
+        .navigationTitle("Daily statistics")
         .onAppear {
             initPedometer()
         }
-//        Text(pedometer.numberOfSteps)
     }
     
 }
